@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  # ---------------------------------------------------------
+  # PHP
+  # ---------------------------------------------------------
+  php:
+    image: php:8.3-fpm-alpine
+    container_name: ${PROJECT_NAME}-php
+    restart: unless-stopped
+    volumes:
+      - /Users/kiwi/Development/php/${PROJECT_NAME}/web:/var/www/html
+
+  # ---------------------------------------------------------
+  # NGINX
+  # ---------------------------------------------------------
+  nginx:
+    image: nginx:1.26.0-alpine
+    container_name: ${PROJECT_NAME}-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - php
+    volumes:
+      - /Users/kiwi/Development/php/${PROJECT_NAME}/config/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - /Users/kiwi/Development/php/${PROJECT_NAME}/config/nginx/conf.d:/etc/nginx/conf.d
+      - /Users/kiwi/Development/php/${PROJECT_NAME}/web:/var/www/html
