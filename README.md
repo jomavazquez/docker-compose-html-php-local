@@ -1,6 +1,6 @@
 # Docker-compose HTML + PHP (nginx or varnish) localhost
 
-This repo is for setting a webserver (Nginx or Varnish + Nginx) in localhost.
+This repo is for setting a webserver (Nginx or Varnish + PHP) in localhost.
 
 ## Files
 
