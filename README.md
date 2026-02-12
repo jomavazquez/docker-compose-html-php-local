@@ -10,7 +10,6 @@ Folder structure:
 \config\database\
 \config\nginx\
 \config\nginx\conf.d\
-\config\varnish\
 \web\
 \
 ```
