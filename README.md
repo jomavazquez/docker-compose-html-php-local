@@ -17,6 +17,11 @@ Folder structure:
 
 ## Steps 
 
+**Database**
+
+You only need to create or be sure that there is an empty folder called "database" into config folder.
+
+
 **ENV file**
 
 This is the file for setting your site.
