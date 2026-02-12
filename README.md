@@ -51,3 +51,10 @@ You can launch the project using (nginx local, for example):
 docker-compose -f nginx-local.yml up -d
 ```
 In your terminal.
+
+NOTE:
+
+It helps create an entry in your /etc/hosts file: (in the example)
+```
+127.0.0.1   www.seocrawler.test
+```
