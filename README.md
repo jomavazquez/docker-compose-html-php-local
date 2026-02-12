@@ -54,5 +54,5 @@ NOTE:
 
 It helps creating an entry in your /etc/hosts file: (in the example)
 ```
-127.0.0.1   www.seocrawler.test
+127.0.0.1   www.elenacarrasco.test
 ```
