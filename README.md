@@ -7,6 +7,7 @@ This repo is for setting a webserver (Nginx or Varnish + PHP) in localhost.
 Folder structure:
 
 ```
+\config\database\
 \config\nginx\
 \config\nginx\conf.d\
 \config\varnish\
